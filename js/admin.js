@@ -298,7 +298,7 @@ function setupExportButtons() {
 
 // Export emails to file
 function exportEmails(format) {
-    fetch('/api/emails')
+    fetch('/get_leads.php')
         .then(response => response.json())
         .then(data => {
             if (format === 'csv') {
