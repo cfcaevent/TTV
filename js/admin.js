@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Fetch emails from the server
 function fetchEmails() {
-    fetch('/api/emails')
+    fetch('/api/get_leads.php')
         .then(response => response.json())
         .then(data => {
             updateEmailsTable(data.emails);
