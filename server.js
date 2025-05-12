@@ -154,7 +154,7 @@ function sendMarketingEmail(email, emailNumber) {
   console.log(`Simulating sending marketing email ${emailNumber} to ${email}`);
 }
 
-app.get("/api/emails", (req, res) => {
+app.get("/api/emails.php", (req, res) => {
   try {
     const data = readData(EMAILS_DB_FILE);
     return res.status(200).json(data);
